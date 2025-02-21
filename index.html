@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .periodic-table {
+            display: grid;
+            grid-template-columns: repeat(18, 60px);
+            gap: 2px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .element {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 5px;
+            font-size: 12px;
+            height: 60px;
+        }
+        .element:hover {
+            background-color: #e0e0e0;
+        }
+        .empty {
+            background-color: transparent;
+            border: none;
+        }
+        .number {
+            font-size: 10px;
+            color: #666;
+        }
+        .symbol {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .name {
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="periodic-table">
+        <!-- Row 1 -->
+        <div class="element"><span class="number">1</span><br><span class="symbol">H</span><br><span class="name">Hydrogen</span></div>
+        <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+        <div class="element"><span class="number">2</span><br><span class="symbol">He</span><br><span class="name">Helium</span></div>
+
+        <!-- Row 2 -->
+        <div class="element"><span class="number">3</span><br><span class="symbol">Li</span><br><span class="name">Lithium</span></div>
+        <div class="element"><span class="number">4</span><br><span class="symbol">Be</span><br><span class="name">Beryllium</span></div>
+        <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+        <div class="element"><span class="number">5</span><br><span class="symbol">B</span><br><span class="name">Boron</span></div>
+        <div class="element"><span class="number">6</span><br><span class="symbol">C</span><br><span class="name">Carbon</span></div>
+        <div class="element"><span class="number">7</span><br><span class="symbol">N</span><br><span class="name">Nitrogen</span></div>
+        <div class="element"><span class="number">8</span><br><span class="symbol">O</span><br><span class="name">Oxygen</span></div>
+        <div class="element"><span class="number">9</span><br><span class="symbol">F</span><br><span class="name">Fluorine</span></div>
+        <div class="element"><span class="number">10</span><br><span class="symbol">Ne</span><br><span class="name">Neon</span></div>
+
+        <!-- Row 3 -->
+        <div class="element"><span class="number">11</span><br><span class="symbol">Na</span><br><span class="name">Sodium</span></div>
+        <div class="element"><span class="number">12</span><br><span class="symbol">Mg</span><br><span class="name">Magnesium</span></div>
+        <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+        <div class="element"><span class="number">13</span><br><span class="symbol">Al</span><br><span class="name">Aluminum</span></div>
+        <div class="element"><span class="number">14</span><br><span class="symbol">Si</span><br><span class="name">Silicon</span></div>
+        <div class="element"><span class="number">15</span><br><span class="symbol">P</span><br><span class="name">Phosphorus</span></div>
+        <div class="element"><span class="number">16</span><br><span class="symbol">S</span><br><span class="name">Sulfur</span></div>
+        <div class="element"><span class="number">17</span><br><span class="symbol">Cl</span><br><span class="name">Chlorine</span></div>
+        <div class="element"><span class="number">18</span><br><span class="symbol">Ar</span><br><span class="name">Argon</span></div>
+
+        <!-- Row 4 -->
+        <div class="element"><span class="number">19</span><br><span class="symbol">K</span><br><span class="name">Potassium</span></div>
+        <div class="element"><span class="number">20</span><br><span class="symbol">Ca</span><br><span class="name">Calcium</span></div>
+        <div class="element"><span class="number">21</span><br><span class="symbol">Sc</span><br><span class="name">Scandium</span></div>
+        <div class="element"><span class="number">22</span><br><span class="symbol">Ti</span><br><span class="name">Titanium</span></div>
+        <div class="element"><span class="number">23</span><br><span class="symbol">V</span><br><span class="name">Vanadium</span></div>
+        <div class="element"><span class="number">24</span><br><span class="symbol">Cr</span><br><span class="name">Chromium</span></div>
+        <div class="element"><span class="number">25</span><br><span class="symbol">Mn</span><br><span class="name">Manganese</span></div>
+        <div class="element"><span class="number">26</span><br><span class="symbol">Fe</span><br><span class="name">Iron</span></div>
+        <div class="element"><span class="number">27</span><br><span class="symbol">Co</span><br><span class="name">Cobalt</span></div>
+        <div class="element"><span class="number">28</span><br><span class="symbol">Ni</span><br><span class="name">Nickel</span></div>
+        <div class="element"><span class="number">29</span><br><span class="symbol">Cu</span><br><span class="name">Copper</span></div>
+        <div class="element"><span class="number">30</span><br><span class="symbol">Zn</span><br><span class="name">Zinc</span></div>
+        <div class="element"><span class="number">31</span><br><span class="symbol">Ga</span><br><span class="name">Gallium</span></div>
+        <div class="element"><span class="number">32</span><br><span class="symbol">Ge</span><br><span class="name">Germanium</span></div>
+        <div class="element"><span class="number">33</span><br><span class="symbol">As</span><br><span class="name">Arsenic</span></div>
+        <div class="element"><span class="number">34</span><br><span class="symbol">Se</span><br><span class="name">Selenium</span></div>
+        <div class="element"><span class="number">35</span><br><span class="symbol">Br</span><br><span class="name">Bromine</span></div>
+        <div class="element"><span class="number">36</span><br><span class="symbol">Kr</span><br><span class="name">Krypton</span></div>
+
+        <!-- Row 5 -->
+        <div class="element"><span class="number">37</span><br><span class="symbol">Rb</span><br><span class="name">Rubidium</span></div>
+        <div class="element"><span class="number">38</span><br><span class="symbol">Sr</span><br><span class="name">Strontium</span></div>
+        <div class="element"><span class="number">39</span><br><span class="symbol">Y</span><br><span class="name">Yttrium</span></div>
+        <div class="element"><span class="number">40</span><br><span class="symbol">Zr</span><br><span class="name">Zirconium</span></div>
+        <div class="element"><span class="number">41</span><br><span class="symbol">Nb</span><br><span class="name">Niobium</span></div>
+        <div class="element"><span class="number">42</span><br><span class="symbol">Mo</span><br><span class="name">Molybdenum</span></div>
+        <div class="element"><span class="number">43</span><br><span class="symbol">Tc</span><br><span class="name">Technetium</span></div>
+        <div class="element"><span class="number">44</span><br><span class="symbol">Ru</span><br><span class="name">Ruthenium</span></div>
+        <div class="element"><span class="number">45</span><br><span class="symbol">Rh</span><br><span class="name">Rhodium</span></div>
+        <div class="element"><span class="number">46</span><br><span class="symbol">Pd</span><br><span class="name">Palladium</span></div>
+        <div class="element"><span class="number">47</span><br><span class="symbol">Ag</span><br><span class="name">Silver</span></div>
+        <div class="element"><span class="number">48</span><br><span class="symbol">Cd</span><br><span class="name">Cadmium</span></div>
+        <div class="element"><span class="number">49</span><br><span class="symbol">In</span><br><span class="name">Indium</span></div>
+        <div class="element"><span class="number">50</span><br><span class="symbol">Sn</span><br><span class="name">Tin</span></div>
+        <div class="element"><span class="number">51</span><br><span class="symbol">Sb</span><br><span class="name">Antimony</span></div>
+        <div class="element"><span class="number">52</span><br><span class="symbol">Te</span><br><span class="name">Tellurium</span></div>
+        <div class="element"><span class="number">53</span><br><span class="symbol">I</span><br><span class="name">Iodine</span></div>
+        <div class="element"><span class="number">54</span><br><span class="symbol">Xe</span><br><span class="name">Xenon</span></div>
+
+        <!-- Row 6 -->
+        <div class="element"><span class="number">55</span><br><span class="symbol">Cs</span><br><span class="name">Cesium</span></div>
+        <div class="element"><span class="number">56</span><br><span class="symbol">Ba</span><br><span class="name">Barium</span></div>
+        <div class="element"><span class="number">57</span><br><span class="symbol">La</span><br><span class="name">Lanthanum</span></div>
+        <div class="element"><span class="number">58</span><br><span class="symbol">Ce</span><br><span class="name">Cerium</span></div>
+        <div class="element"><span class="number">59</span><br><span class="symbol">Pr</span><br><span class="name">Praseodymium</span></div>
+        <div class="element"><span class="number">60</span><br><span class="symbol">Nd</span><br><span class="name">Neodymium</span></div>
+        <div class="element"><span class="number">61</span><br><span class="symbol">Pm</span><br><span class="name">Promethium</span></div>
+        <div class="element"><span class="number">62</span><br><span class="symbol">Sm</span><br><span class="name">Samarium</span></div>
+        <div class="element"><span class="number">63</span><br><span class="symbol">Eu</span><br><span class="name">Europium</span></div>
+        <div class="element"><span class="number">64</span><br><span class="symbol">Gd</span><br><span class="name">Gadolinium</span></div>
+        <div class="element"><span class="number">65</span><br><span class="symbol">Tb</span><br><span class="name">Terbium</span></div>
+        <div class="element"><span class="number">66</span><br><span class="symbol">Dy</span><br><span class="name">Dysprosium</span></div>
+        <div class="element"><span class="number">67</span><br><span class="symbol">Ho</span><br><span class="name">Holmium</span></div>
+        <div class="element"><span class="number">68</span><br><span class="symbol">Er</span><br><span class="name">Erbium</span></div>
+        <div class="element"><span class="number">69</span><br><span class="symbol">Tm</span><br><span class="name">Thulium</span></div>
+        <div class="element"><span class="number">70</span><br><span class="symbol">Yb</span><br><span class="name">Ytterbium</span></div>
+        <div class="element"><span class="number">71</span><br><span class="symbol">Lu</span><br><span class="name">Lutetium</span></div>
+        <div class="element"><span class="number">72</span><br><span class="symbol">Hf</span><br><span class="name">Hafnium</span></div>
+        <div class="element"><span class="number">73</span><br><span class="symbol">Ta</span><br><span class="name">Tantalum</span></div>
+        <div class="element"><span class="number">74</span><br><span class="symbol">W</span><br><span class="name">Tungsten</span></div>
+        <div class="element"><span class="number">75</span><br><span class="symbol">Re</span><br><span class="name">Rhenium</span></div>
+        <div class="element"><span class="number">76</span><br><span class="symbol">Os</span><br><span class="name">Osmium</span></div>
+        <div class="element"><span class="number">77</span><br><span class="symbol">Ir</span><br><span class="name">Iridium</span></div>
+        <div class="element"><span class="number">78</span><br><span class="symbol">Pt</span><br><span class="name">Platinum</span></div>
+        <div class="element"><span class="number">79</span><br><span class="symbol">Au</span><br><span class="name">Gold</span></div>
+        <div class="element"><span class="number">80</span><br><span class="symbol">Hg</span><br><span class="name">Mercury</span></div>
+        <div class="element"><span class="number">81</span><br><span class="symbol">Tl</span><br><span class="name">Thallium</span></div>
+        <div class="element"><span class="number">82</span><br><span class="symbol">Pb</span><br><span class="name">Lead</span></div>
+        <div class="element"><span class="number">83</span><br><span class="symbol">Bi</span><br><span class="name">Bismuth</span></div>
+        <div class="element"><span class="number">84</span><br><span class="symbol">Po</span><br><span class="name">Polonium</span></div>
+        <div class="element"><span class="number">85</span><br><span class="symbol">At</span><br><span class="name">Astatine</span></div>
+        <div class="element"><span class="number">86</span><br><span class="symbol">Rn</span><br><span class="name">Radon</span></div>
+
+        <!-- Row 7 -->
+        <div class="element"><span class="number">87</span><br><span class="symbol">Fr</span><br><span class="name">Francium</span></div>
+        <div class="element"><span class="number">88</span><br><span class="symbol">Ra</span><br><span class="name">Radium</span></div>
+        <div class="element"><span class="number">89</span><br><span class="symbol">Ac</span><br><span class="name">Actinium</span></div>
+        <div class="element"><span class="number">90</span><br><span class="symbol">Th</span><br><span class="name">Thorium</span></div>
+        <div class="element"><span class="number">91</span><br><span class="symbol">Pa</span><br><span class="name">Protactinium</span></div>
+        <div class="element"><span class="number">92</span><br><span class="symbol">U</span><br><span class="name">Uranium</span></div>
+        <div class="element"><span class="number">93</span><br><span class="symbol">Np</span><br><span class="name">Neptunium</span></div>
+        <div class="element"><span class="number">94</span><br><span class="symbol">Pu</span><br><span class="name">Plutonium</span></div>
+        <div class="element"><span class="number">95</span><br><span class="symbol">Am</span><br><span class="name">Americium</span></div>
+        <div class="element"><span class="number">96</span><br><span class="symbol">Cm</span><br><span class="name">Curium</span></div>
+        <div class="element"><span class="number">97</span><br><span class="symbol">Bk</span><br><span class="name">Berkelium</span></div>
+        <div class="element"><span class="number">98</span><br><span class="symbol">Cf</span><br><span class="name">Californium</span></div>
+        <div class="element"><span class="number">99</span><br><span class="symbol">Es</span><br><span class="name">Einsteinium</span></div>
+        <div class="element"><span class="number">100</span><br><span class="symbol">Fm</span><br><span class="name">Fermium</span></div>
+        <div class="element"><span class="number">101</span><br><span class="symbol">Md</span><br><span class="name">Mendelevium</span></div>
+        <div class="element"><span class="number">102</span><br><span class="symbol">No</span><br><span class="name">Nobelium</span></div>
+        <div class="element"><span class="number">103</span><br><span class="symbol">Lr</span><br><span class="name">Lawrencium</span></div>
+        <div class="element"><span class="number">104</span><br><span class="symbol">Rf</span><br><span class="name">Rutherfordium</span></div>
+        <div class="element"><span class="number">105</span><br><span class="symbol">Db</span><br><span class="name">Dubnium</span></div>
+        <div class="element"><span class="number">106</span><br><span class="symbol">Sg</span><br><span class="name">Seaborgium</span></div>
+        <div class="element"><span class="number">107</span><br><span class="symbol">Bh</span><br><span class="name">Bohrium</span></div>
+        <div class="element"><span class="number">108</span><br><span class="symbol">Hs</span><br><span class="name">Hassium</span></div>
+        <div class="element"><span class="number">109</span><br><span class="symbol">Mt</span><br><span class="name">Meitnerium</span></div>
+        <div class="element"><span class="number">110</span><br><span class="symbol">Ds</span><br><span class="name">Darmstadtium</span></div>
+        <div class="element"><span class="number">111</span><br><span class="symbol">Rg</span><br><span class="name">Roentgenium</span></div>
+        <div class="element"><span class="number">112</span><br><span class="symbol">Cn</span><br><span class="name">Copernicium</span></div>
+        <div class="element"><span class="number">113</span><br><span class="symbol">Nh</span><br><span class="name">Nihonium</span></div>
+        <div class="element"><span class="number">114</span><br><span class="symbol">Fl</span><br><span class="name">Flerovium</span></div>
+        <div class="element"><span class="number">115</span><br><span class="symbol">Mc</span><br><span class="name">Moscovium</span></div>
+        <div class="element"><span class="number">116</span><br><span class="symbol">Lv</span><br><span class="name">Livermorium</span></div>
+        <div class="element"><span class="number">117</span><br><span class="symbol">Ts</span><br><span class="name">Tennessine</span></div>
+        <div class="element"><span class="number">118</span><br><span class="symbol">Og</span><br><span class="name">Oganesson</span></div>
+    </div>
+</body>
+</html>
